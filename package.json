@@ -1,0 +1,40 @@
+{
+  "name": "kerplunk-filters-tags",
+  "displayName": "Tag Filters",
+  "description": "Filter by tag or add tags based on filters",
+  "version": "0.0.1",
+  "kerplunk": {
+    "dependencies": [
+      "kerplunk-filters"
+    ],
+    "permissions": {
+      "kerplunk-characteristic": {
+        "models": [
+          "Characteristic"
+        ]
+      }
+    }
+  },
+  "keywords": [
+    "kerplunk-plugin",
+    "kp:Utility",
+    "kp:Filters"
+  ],
+  "engines": {
+    "node": ">=0.10"
+  },
+  "main": "./lib/index.js",
+  "dependencies": {
+    "lodash": "^3.7.0",
+    "when": "^3.7.3"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.1",
+    "glut": "0.0.1",
+    "gulp": "^3.8.8",
+    "gulp-coffee": "^2.3.1"
+  },
+  "scripts": {
+    "prepublish": "rm -rf ./lib ./public && gulp"
+  }
+}
