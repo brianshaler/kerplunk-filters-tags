@@ -41,5 +41,6 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/brianshaler/kerplunk-filters-tags.git"
-  }
+  },
+  "license": "MIT"
 }
