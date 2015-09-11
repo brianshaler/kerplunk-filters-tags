@@ -2,7 +2,7 @@
   "name": "kerplunk-filters-tags",
   "displayName": "Tag Filters",
   "description": "Filter by tag or add tags based on filters",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "kerplunk": {
     "dependencies": [
       "kerplunk-filters"
