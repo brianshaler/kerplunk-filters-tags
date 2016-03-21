@@ -15,7 +15,7 @@ module.exports = (System) ->
         $in: item.attributes.characteristic
     .find()
     Promise(mpromise).then (characteristics) ->
-      texts = _.pluck characteristics, 'text'
+      texts = _.map characteristics, 'text'
       data.match = texts.indexOf("tag:#{parameter}") != -1
       # console.log 'hasTag done', data.match
       data
